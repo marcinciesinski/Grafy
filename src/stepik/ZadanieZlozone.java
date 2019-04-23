@@ -19,7 +19,7 @@ public class ZadanieZlozone {
         System.out.println("Ilość krawędzi: " + edges);
         System.out.println("Stopnie wierzchołków: " + printDegrees(degrees));
         System.out.println("Średni stopień: " + averageDegrees(degrees));
-        System.out.println(checkForType(matrix));
+        System.out.println(checkForType(matrix,degrees, edges));
     
     
     }
@@ -111,27 +111,39 @@ public class ZadanieZlozone {
         return true;
     }
     
-    private static boolean isPathGraph(String[][] matrix){
-        firstLoop:
-        for(int i = 0; i < matrix.length; i++) {
-            for(int j = 0; j < matrix[i].length; j++) {
-            
+    private static boolean isPathGraph(int [] degreesArray, int edges){
+        if ( degreesArray.length == edges-1)
+            return false;
+        for(int i = 1; i < degreesArray.length; i++) {
+            if(degreesArray[0] != 1){
+                return false;
+            }else if (degreesArray[i] != 2 && i != degreesArray.length -1){
+                return false;
+            }else if (degreesArray[degreesArray.length -1] != 1){
+                return false;
             }
-            
         }
         return true;
     }
     
-    private static boolean isCyclicGraph(String[][] matrix){
-        
-        
+    private static boolean isCyclicGraph(int[] degreesArray, int edges){
+        if( degreesArray.length != edges)
+            return false;
+        for(int d : degreesArray){
+            if( d != 2){
+                return false;
+            }
+        }
         return true;
     }
     
-    private static String checkForType(String[][] matrix){
+    private static String checkForType(String[][] matrix,int[] degrees, int edges){
         if( isFullGraph(matrix))
             return "Jest to graf pełny.";
-        
+        else if( isCyclicGraph(degrees, edges))
+            return "Jest to cykl.";
+        else if( isPathGraph( degrees, edges))
+            return "Jest to ścieżka.";
         return "Graf nie należy do żadnej z podstawowych klas.";
     }
 }
