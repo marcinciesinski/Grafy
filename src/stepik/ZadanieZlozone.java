@@ -18,10 +18,8 @@ public class ZadanieZlozone {
         System.out.println("Ilość wierzchołków: "+ verticles);
         System.out.println("Ilość krawędzi: " + edges);
         System.out.println("Stopnie wierzchołków: " + printDegrees(degrees));
-        System.out.println("Średni stopień: " + averageDegrees(degrees));
+        System.out.println(averageDegrees(degrees));
         System.out.println(checkForType(matrix,degrees, edges));
-    
-    
     }
     
     private static List<String> getInput(){
@@ -86,19 +84,24 @@ public class ZadanieZlozone {
         String result;
         StringBuilder sb = new StringBuilder();
         for(int d : degrees) {
-            sb.append(d + " ");
+            sb.append(d);
+            sb.append(" ");
         }
         result = sb.toString().trim();
         return result;
     }
     
-    private static double averageDegrees(int[] degrees){
+    private static String averageDegrees(int[] degrees){
         double average, sum = 0;
         for(int d : degrees){
             sum += d;
         }
         average = sum/degrees.length;
-        return average;
+        if (average % 1.0 ==0){
+            return "Średni stopień: " + (int)average;
+        }else {
+            return "Średni stopień: " + average;
+        }
     }
     
     private static boolean isFullGraph(String[][] matrix){
@@ -112,7 +115,7 @@ public class ZadanieZlozone {
     }
     
     private static boolean isPathGraph(int [] degreesArray, int edges){
-        if ( degreesArray.length == edges-1)
+        if ( degreesArray.length -1 != edges)
             return false;
         for(int i = 1; i < degreesArray.length; i++) {
             if(degreesArray[0] != 1){
@@ -137,13 +140,27 @@ public class ZadanieZlozone {
         return true;
     }
     
-    private static String checkForType(String[][] matrix,int[] degrees, int edges){
+    private static boolean isTreeGraph( int edges, int[] degreesArray){
+        if( degreesArray.length -1 != edges)
+            return false;
+        else if(degreesArray[0] != 2)
+            return false;
+        for(int i = 1; i < degreesArray.length; i++) {
+            if(degreesArray[i] != 1 && degreesArray[degreesArray.length -1] != 1)
+                return false;
+        }
+        return true;
+    }
+    
+    private static String checkForType(String[][] matrix,int[] degreesArray, int edges){
         if( isFullGraph(matrix))
             return "Jest to graf pełny.";
-        else if( isCyclicGraph(degrees, edges))
+        else if( isCyclicGraph(degreesArray, edges))
             return "Jest to cykl.";
-        else if( isPathGraph( degrees, edges))
+        else if( isPathGraph( degreesArray, edges))
             return "Jest to ścieżka.";
+        else if( isTreeGraph(edges, degreesArray))
+            return "Jest to drzewo.";
         return "Graf nie należy do żadnej z podstawowych klas.";
     }
 }
