@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4e4f6d2-0974-4166-8b10-19c2cc6a71d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stepik/MatrixToList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stepik/GraphSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,22 +15,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stepik/NeighborList.java">
+        <entry file="file://$PROJECT_DIR$/src/stepik/CompletingTheGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/stepik/MatrixToList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="290">
+              <caret line="113" column="5" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,10 +27,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stepik/IsEulerGraph.java">
+        <entry file="file://$PROJECT_DIR$/src/stepik/MatrixToList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+            <state relative-caret-position="17">
+              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/stepik/GraphSquare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="21" column="30" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stepik/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="165" column="57" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stepik/ListToMatrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="64" column="17" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="70" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,7 +97,6 @@
         <option value="$PROJECT_DIR$/src/stepik/NeighborSearch.java" />
         <option value="$PROJECT_DIR$/src/stepik/AddEdgeToGraph.java" />
         <option value="$PROJECT_DIR$/src/stepik/AddNodeToGraph.java" />
-        <option value="$PROJECT_DIR$/src/stepik/asd.txt" />
         <option value="$PROJECT_DIR$/src/stepik/DeleteNodeFromGraph.java" />
         <option value="$PROJECT_DIR$/src/stepik/asd" />
         <option value="$PROJECT_DIR$/src/stepik/DeepFirstSearchGraph.java" />
@@ -85,6 +104,14 @@
         <option value="$PROJECT_DIR$/src/stepik/FleuryAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/stepik/NeighborList.java" />
         <option value="$PROJECT_DIR$/src/stepik/MatrixToList.java" />
+        <option value="$PROJECT_DIR$/src/stepik/asd.txt" />
+        <option value="$PROJECT_DIR$/src/stepik/DirectedNeighbourList.java" />
+        <option value="$PROJECT_DIR$/src/stepik/IsColoredGraph.java" />
+        <option value="$PROJECT_DIR$/src/stepik/ListToMatrix.java" />
+        <option value="$PROJECT_DIR$/src/stepik/IsBipartedGraph.java" />
+        <option value="$PROJECT_DIR$/src/stepik/CompletingTheGraph.java" />
+        <option value="$PROJECT_DIR$/src/stepik/GraphSquare.java" />
+        <option value="$PROJECT_DIR$/src/stepik/test.txt" />
       </list>
     </option>
   </component>
@@ -127,7 +154,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ToolWindowVersion Control.ShowToolbar" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558381113790" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559077840165" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -145,9 +172,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MatrixToList">
-    <configuration name="DeepFirstSearchGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stepik.DeepFirstSearchGraph" />
+  <component name="RunManager" selected="Application.GraphSquare">
+    <configuration name="CompletingTheGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stepik.CompletingTheGraph" />
       <module name="Grafy" />
       <extension name="coverage">
         <pattern>
@@ -159,8 +186,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DeleteNodeFromGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stepik.DeleteNodeFromGraph" />
+    <configuration name="GraphSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stepik.GraphSquare" />
       <module name="Grafy" />
       <extension name="coverage">
         <pattern>
@@ -172,8 +199,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsEulerGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stepik.IsEulerGraph" />
+    <configuration name="IsBipartedGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stepik.IsBipartedGraph" />
+      <module name="Grafy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListToMatrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stepik.ListToMatrix" />
       <module name="Grafy" />
       <extension name="coverage">
         <pattern>
@@ -198,26 +238,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NeighborList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="stepik.NeighborList" />
-      <module name="Grafy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stepik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphSquare" />
+        <item itemvalue="Application.ListToMatrix" />
         <item itemvalue="Application.MatrixToList" />
-        <item itemvalue="Application.NeighborList" />
-        <item itemvalue="Application.IsEulerGraph" />
-        <item itemvalue="Application.DeepFirstSearchGraph" />
-        <item itemvalue="Application.DeleteNodeFromGraph" />
+        <item itemvalue="Application.CompletingTheGraph" />
+        <item itemvalue="Application.IsBipartedGraph" />
       </list>
     </recent_temporary>
   </component>
@@ -302,29 +329,72 @@
       <option name="project" value="LOCAL" />
       <updated>1558193230838</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Klasa zamieniająca macierz sasiedztwa na liste sasiedztwa">
+      <created>1558381215520</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558381215520</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Klasa zmieniajaca liste sasiedztwa w macierz sasiedztwa">
+      <created>1558383009641</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1558383009641</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Klasa liczaca stopnie wejsciowe i wyjsciowe wierzcholkow grafu skierowanego">
+      <created>1558539328545</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1558539328545</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Klasa sprawdzajaca czy dany graf jest klasycznie kolorowalny">
+      <created>1558543496763</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558543496763</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Klasa sprawdzajaca dwudzielnosc grafu oraz wypisujaca podzial jesli taki istnieje">
+      <created>1558557549764</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558557549764</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Klasa która wypisuje dopełnienie grafu jako lista sasiedztwa">
+      <created>1559066427438</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1559066427438</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49601594" visible="true" weight="0.1860817" />
-      <window_info id="Structure" order="1" sideWeight="0.50398403" side_tool="true" weight="0.1860817" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940048" visible="true" weight="0.19818456" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Structure" order="5" sideWeight="0.5059952" side_tool="true" visible="true" weight="0.19818456" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28641573" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31751227" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40261865" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2831424" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.25040916" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.25040916" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -346,7 +416,13 @@
     <MESSAGE value="Klasa sprawdzająca spojnosc grafu algorytmem dfs dla macierzy sasiedztwa" />
     <MESSAGE value="Klasa sprawdzająca czy graf jest Eulerowski lub poleulerowski" />
     <MESSAGE value="Klasa odczytująca listę sąsiedztwa i licząca średni stopień grafu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klasa odczytująca listę sąsiedztwa i licząca średni stopień grafu" />
+    <MESSAGE value="Klasa zamieniająca macierz sasiedztwa na liste sasiedztwa" />
+    <MESSAGE value="Klasa zmieniajaca liste sasiedztwa w macierz sasiedztwa" />
+    <MESSAGE value="Klasa liczaca stopnie wejsciowe i wyjsciowe wierzcholkow grafu skierowanego" />
+    <MESSAGE value="Klasa sprawdzajaca czy dany graf jest klasycznie kolorowalny" />
+    <MESSAGE value="Klasa sprawdzajaca dwudzielnosc grafu oraz wypisujaca podzial jesli taki istnieje" />
+    <MESSAGE value="Klasa która wypisuje dopełnienie grafu jako lista sasiedztwa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klasa która wypisuje dopełnienie grafu jako lista sasiedztwa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -397,46 +473,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stepik/GrafSkierowany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-354">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stepik/NeighborSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1357#1358#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stepik/asd.txt" />
     <entry file="file://$PROJECT_DIR$/src/stepik/asd" />
     <entry file="file://$PROJECT_DIR$/src/stepik/AddNodeToGraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stepik/DeleteNodeFromGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -454,30 +495,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/stepik/DeepFirstSearchGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/stepik/MacierzSasiedztwa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stepik/IsEulerGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+        <state relative-caret-position="51">
+          <caret line="69" column="4" lean-forward="true" selection-start-line="69" selection-start-column="4" selection-end-line="79" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/GrafSkierowany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-547">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/DeleteNodeFromGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/testInput.txt" />
+    <entry file="file://$PROJECT_DIR$/src/stepik/NeighborSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1087#1088#0" expanded="true" />
+            <element signature="e#1121#1122#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/DirectedNeighbourList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="13" column="70" lean-forward="true" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -486,8 +552,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stepik/NeighborList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="476">
           <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/DeepFirstSearchGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="41" column="58" lean-forward="true" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/IsBipartedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="155" column="1" lean-forward="true" selection-end-line="156" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1493#1494#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/IsColoredGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/MacierzSasiedztwa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/CompletingTheGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="113" column="5" lean-forward="true" selection-start-line="76" selection-start-column="4" selection-end-line="113" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -496,8 +611,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/stepik/MatrixToList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="17">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/ListToMatrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="56" selection-start-column="3" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="165" column="57" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stepik/GraphSquare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
