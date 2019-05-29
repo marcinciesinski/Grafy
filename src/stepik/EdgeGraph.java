@@ -14,13 +14,13 @@ public class EdgeGraph {
         String[][] inputMatrix = buildMatrix(inputList);
 
         fillMatrixFromList(inputList, inputMatrix);
-//        printMatrix(inputMatrix, inputMatrix.length);
+        printMatrix(inputMatrix, inputMatrix.length);
 
         Map<Integer, List<String>> map = buildEdgeGraphAsMap(inputMatrix);
-//        map.forEach((k , v) -> {
-//            System.out.println(k +" "+ v);
-//        });
-//        System.out.println();
+        map.forEach((k , v) -> {
+            System.out.println(k +" "+ v);
+        });
+        System.out.println();
 
         List<String> returnList = pritnEdgeGraphListFromMap(map, inputList);
         printEdgeList(returnList);
@@ -105,11 +105,11 @@ public class EdgeGraph {
             for (int i = 0; i < tempArray.length; i++) {
                 if(!graphMap.containsKey(Integer.parseInt(tempArray[i])))
                     break;
-                List<String> tempList = graphMap.get(i+1);
+//                List<String> tempList = graphMap.get(Integer.parseInt(tempArray[0]));
 //                System.out.println(graphMap.keySet().toArray()[i]);
 //                System.out.println(graphMap.get(i+1));
-                for (int k = 0; k < tempList.size(); k++) {
-                    System.out.println(tempArray[i]);
+                for (int k = 0; k < graphMap.get(Integer.parseInt(tempArray[i])).size(); k++) {
+//                    System.out.println(tempArray[i]);
                     if(graphMap.containsKey(Integer.parseInt(tempArray[i]))) {
                         sb.append("(" + graphMap.keySet().toArray()[Integer.parseInt(tempArray[i]) - 1] + ", " + graphMap.get(Integer.parseInt(tempArray[i])).get(k) + ")");
                         sb.append(" ");
