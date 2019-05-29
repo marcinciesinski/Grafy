@@ -10,15 +10,14 @@ public class GraphSquare {
     public static void main(String[] args) {
         List<String> inputList = getGraphInput();
         String[][] firstMatrix = buildMatrix(inputList);
-        String[][] diagonalMatrix = buildMatrix(inputList);
+
         fillMatrixFromList(inputList, firstMatrix);
-        fillDiagonalWithZero(diagonalMatrix);
-        copyDiagFromMatrixToDiagonal(firstMatrix, diagonalMatrix);
-        
+
         String[][] squaredMatrix = squareMatrix(firstMatrix);
-        String[][] squaredGraphMatrix = squaredGraphMatrix(firstMatrix, squaredMatrix, diagonalMatrix);
+        String[][] squaredGraphMatrix = squaredGraphMatrix(firstMatrix, squaredMatrix);
         List<String> matrixList = transformMatrixToList(squaredGraphMatrix);
         List<String> resultList = transformMatrixListToList(matrixList);
+
         printList(resultList);
     }
     
@@ -83,7 +82,7 @@ public class GraphSquare {
         return returnMatrix;
     }
     
-    private static String[][] squaredGraphMatrix(String[][] firstMatrix, String[][] squaredMatrix, String[][] diagonalMatrix){
+    private static String[][] squaredGraphMatrix(String[][] firstMatrix, String[][] squaredMatrix){
         int size = firstMatrix.length;
         String[][] returnMatrix = new String[size][size];
         for(int i = 0; i < size; i++) {
@@ -91,32 +90,14 @@ public class GraphSquare {
                 returnMatrix[i][j] = (Integer.parseInt(firstMatrix[i][j]) + Integer.parseInt(squaredMatrix[i][j])+"");
             }
         }
-        for(int i = 0; i < size; i++) {
-            for(int j = 0; j < size; j++) {
-                returnMatrix[i][j] = (Integer.parseInt(returnMatrix[i][j]) - Integer.parseInt(diagonalMatrix[i][j])+"");
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if( !(returnMatrix[i][j].equals("1") || returnMatrix[i][j].equals("0")))
+                    returnMatrix[i][j] = "1";
             }
         }
-//        zeroingDiagonalMatrix(returnMatrix);
+        zeroingDiagonalMatrix(returnMatrix);
         return returnMatrix;
-    }
-    
-    private static void fillDiagonalWithZero(String[][] matrix){
-        for(int i = 0; i < matrix.length; i++) {
-            for(int j = 0; j < matrix.length; j++) {
-                matrix[i][j] = "0";
-            }
-        }
-    }
-    
-    private static void copyDiagFromMatrixToDiagonal(String[][] matrix, String[][] diagonalMatrix){
-        int counter = 0;
-        for(int i = 0; i < matrix.length; i++) {
-            if(matrix[i][counter].equals("0"))
-                diagonalMatrix[i][counter] = "1";
-            else
-                diagonalMatrix[i][counter] = "0";
-            counter++;
-        }
     }
     
     private static void zeroingDiagonalMatrix(String[][] matrix){
@@ -164,21 +145,5 @@ public class GraphSquare {
     private static void printList(List<String> returnList){
         for(String line : returnList)
             System.out.println(line);
-    }
-    
-    
-    private static void printMatrix(String[][] matrixToPrint, int numberOfNodes) {
-        int index = 0;
-        for (String[] lines : matrixToPrint){
-            for (String s : lines){
-                System.out.printf(s);
-                if (index != numberOfNodes -1){
-                    System.out.printf(" ");
-                }
-                index++;
-            }
-            System.out.println();
-            index =0;
-        }
     }
 }
